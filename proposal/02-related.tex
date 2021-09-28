@@ -1,22 +1,11 @@
 
 \section{Related work}
-Our application will be based on the research paper ~ \cite{4}, which presents the process used to collect this data. SONYC has developed an acoustic sensor with high quality and low production cost to monitor the noise pollution levels across the city. The sensors follow DCASE (Detection and classification of acoustic scenes and events) to eliminate discrepancy. There are various other datasets like UrbanSound, UrbanSound8k that address this particular problem but have limited spacial and temporal data points. A VGGish model has been developed and trained using stochastic gradient descent to minimize cross-entropy loss. To eliminate over-fitting early stopping on validation set has been implemented. The overall AUPRC achieved by this model is 0.62 and 0.76 on different level classes, which performed poorly on music and non-machinery impact sounds.
+Collecting audio data and annotating the soundscapes are an important part of acoustic research especially in the situations with high variability in different locations.
 
-According to [2] a supervised learning methodology is applied to real-life high quality recordings of 3-5 minutes with very little noise of 15 different acoustic scenes (lakeside beach, bus, cafe/restaurant, car, city
-center, forest path, grocery store, home, library, metro station,
-office, urban park, residential area, train, and tram) and two common enviornment areas (outdoor - residential areas and indoor - home). A mel frequency cepstral coefficient (MFCC) and Gaussian mixture model (GMM) was trained using expectation maximization algorithm. The overall accuracy achieved by the model is 72.5 \% ranging from 13.9\% for parks to 98.6\% for office spaces.
+In the paper ~\cite{5} they have discussed about soundscapes and different ways to annotate audio data using crowdsourcing.There are basically two ways to achieve this one of them being waveform and the other one being spectrogram visualization. Certain annotation trials were done using the two techniques and interesting results were drawn from the experiments.People using the spectrogram visualization technique were able to produce high quality and precision annotations than waveform visualization.    
 
-The partitioning of the data was done based on the location
-of the original recordings. All segments obtained from the
-same original recording were included into a single subset
-- either development or evaluation. This is a very important
-detail that is sometimes neglected, and failing to recognize
-it results in overestimating the system performance, as the
-classification systems are capable of learning the location-
-specific acoustic conditions instead of the intended general
-audio scene properties,. The phenomenon is similar to the
-”album effect” encountered in music information retrieval, that
-has been noticed and is usually accounted for when setting up
-experiments. The cross-validation setup provided with the
-database consists of four folds distributing the 78 segments
-available in the development set based on location.
+Our application will be based on the research paper~ \cite{4}, which presents us the process to collect this data. SONYC has developed an acoustic sensor with high quality and low production cost to monitor the noise pollution levels across the city in neighborhoods like Manhattan, Brooklyn and Queens.the collected data was then annotated using a campaign on Zooniverse. The sensors follow DCASE (Detection and classification of acoustic scenes and events) to eliminate discrepancy. There are various other datasets like UrbanSound, UrbanSound8k that address this particular problem but have limited spacial and temporal data points.A VGGish model has been developed and trained using stochastic gradient descent to minimize cross-entropy loss. To eliminate over-fitting early stopping on validation set has been implemented. Two models were trained on course-level and fine-level tags.The overall AUPRC achieved by this model is 0.62 and 0.76 on different level classes, which performed poorly on music and non-machinery impact sounds.
+
+According to [2] a supervised learning methodology is applied to real-life high quality recordings of 3-5 minutes with very little noise of 15 different acoustic scenes (lakeside beach, bus, cafe/restaurant, car, city center, forest path, grocery store, home, library, metro station,office, urban park, residential area, train, and tram) and two common enviornment areas (outdoor - residential areas and indoor - home). A mel frequency cepstral coefficient (MFCC) and Gaussian mixture model (GMM) was trained using expectation maximization algorithm. The overall accuracy achieved by the model is 72.5 \% ranging from 13.9\% for parks to 98.6\% for office spaces.
+
+. 
