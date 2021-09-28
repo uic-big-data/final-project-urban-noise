@@ -51,9 +51,11 @@
 \usepackage{mathptmx}                  % use matching math font
 \usepackage{times}                     % we use Times as the main font
 \renewcommand*\ttdefault{txtt}         % a nicer typewriter font
-\usepackage{cite}                      % needed to automatically sort the references
-\usepackage{tabu}                      % only used for the table example
-\usepackage{booktabs}                  % only used for the table example
+\usepackage{cite}
+\usepackage{graphics}                      % needed to automatically sort the references                      % only used for the table example
+\usepackage{booktabs}
+\usepackage{float}
+\graphicspath{{./figs/}}                 % only used for the table example
 %% We encourage the use of mathptmx for consistent usage of times font
 %% throughout the proceedings. However, if you encounter conflicts
 %% with other math-related packages, you may want to disable it.
@@ -89,16 +91,16 @@
 
 %% indicate IEEE Member or Student Member in form indicated below
 \author{Roy G. Biv, Ed Grimley, \textit{Member, IEEE}, and Martha Stewart}
-\authorfooter{
+%\authorfooter{
 %% insert punctuation at end of each item
-\item
- Roy G. Biv is with Starbucks Research. E-mail: roy.g.biv@aol.com.
-\item
- Ed Grimley is with Grimley Widgets, Inc.. E-mail: ed.grimley@aol.com.
-\item
- Martha Stewart is with Martha Stewart Enterprises at Microsoft
- Research. E-mail: martha.stewart@marthastewart.com.
-}
+%\item
+ %Roy G. Biv is with Starbucks Research. E-mail: roy.g.biv@aol.com.
+%\item
+ %Ed Grimley is with Grimley Widgets, Inc.. E-mail: ed.grimley@aol.com.
+%\item
+ %Martha Stewart is with Martha Stewart Enterprises at Microsoft
+ %Research. E-mail: martha.stewart@marthastewart.com.
+%}
 
 %other entries to be set up for journal
 \shortauthortitle{Biv \MakeLowercase{\textit{et al.}}: Global Illumination for Fun and Profit}
@@ -161,7 +163,7 @@
 %% ``\begin{document}'' command. It prepares and prints the title block.
 
 %% the only exception to this rule is the \firstsection command
-\firstsection{Introduction}
+
 
 \maketitle
 
@@ -170,7 +172,8 @@
 \input{02-related}
 \input{03-data}
 \input{04-research}
-\input{05-timeline}
+\input{05-timeline} 
+
 
 %\bibliographystyle{abbrv}
 \bibliographystyle{abbrv-doi}
@@ -180,4 +183,3 @@
 
 \bibliography{proposal}
 \end{document}
-
