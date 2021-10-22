@@ -1,0 +1,17 @@
+{
+  "annotation_path": "C:/Users/svelet2/sonyc-ust-stc/data/annotations.csv",
+  "taxonomy_path": "C:/Users/svelet2/sonyc-ust-stc/data/dcase-ust-taxonomy.yaml",
+  "emb_dir": "C:/Users/svelet2/sonyc-ust-stc/data/features",
+  "output_dir": "C:/Users/svelet2/sonyc-ust-stc/output",
+  "exp_id": "baseline_fine",
+  "hidden_layer_size": 128,
+  "num_hidden_layers": 1,
+  "learning_rate": 0.001,
+  "l2_reg": 1e-05,
+  "batch_size": 64,
+  "num_epochs": 100,
+  "patience": 20,
+  "no_standardize": false,
+  "label_mode": "fine",
+  "random_state": 0
+}
