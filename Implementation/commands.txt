@@ -1,0 +1,43 @@
+	openl3 audio C:/Users/svelet2/sonyc-ust-stc/data/audio --output-dir C:/Users/svelet2/sonyc-ust-stc/data/features/ --input-repr mel256 --content-type env --audio-embedding-size 512 --audio-hop-size 1.0 --audio-batch-size 16
+
+
+
+
+
+
+
+openl3 audio C:/Users/svelet2/sonyc-ust-stc/data/audio --output-dir C:/Users/svelet2/sonyc-ust-stc/features/ --input-repr mel256 --content-type env --audio-embedding-size 512 --audio-hop-size 1.0 --audio-batch-size 16
+
+
+
+openl3 audio C:/Users/svelet2/sonyc-ust-stc/data/audio/00_000066.wav --output C:/Users/svelet2/sonyc-ust-stc/features/
+
+
+
+openl3 audio /data/audio/00_000066.wav --output /features/
+
+
+
+
+set SONYC_UST_PATH=~/sonyc-ust-stc
+
+
+
+python classify.py  C:/Users/svelet2/sonyc-ust-stc/data/annotations.csv  C:/Users/svelet2/sonyc-ust-stc/data/dcase-ust-taxonomy.yaml  C:/Users/svelet2/sonyc-ust-stc/data/features C:/Users/svelet2/sonyc-ust-stc/output baseline_fine --label_mode fine
+
+python classify.py $SONYC_UST_PATH/data/annotations.csv $SONYC_UST_PATH/data/dcase-ust-taxonomy.yaml $SONYC_UST_PATH/embeddings $SONYC_UST_PATH/output baseline_fine --label_mode fine
+
+
+
+python evaluate_predictions.py C:/Users/svelet2/sonyc-ust-stc/output/baseline_fine/20211021142948/test_output.csv C:/Users/svelet2/sonyc-ust-stc/data/annotations.csv C:/Users/svelet2/sonyc-ust-stc/data/dcase-ust-taxonomy.yaml
+
+
+python classify.py C:/Users/svelet2/sonyc-ust-stc/data/annotations.csv C:/Users/svelet2/sonyc-ust-stc/data/dcase-ust-taxonomy.yaml C:/Users/svelet2/sonyc-ust-stc/data/features/ C:/Users/svelet2/sonyc-ust-stc/output baseline_coarse --label_mode coarse
+
+
+
+python evaluate_predictions.py C:/Users/svelet2/sonyc-ust-stc/output/baseline_fine/20211021142948/validate_output.csv C:/Users/svelet2/sonyc-ust-stc/data/annotations.csv C:/Users/svelet2/sonyc-ust-stc/data/dcase-ust-taxonomy.yaml
+
+
+
+python evaluate_predictions.py C:/Users/svelet2/sonyc-ust-stc/output/baseline_coarse/20211021230845/validate_output.csv C:/Users/svelet2/sonyc-ust-stc/data/annotations.csv C:/Users/svelet2/sonyc-ust-stc/data/dcase-ust-taxonomy.yaml
