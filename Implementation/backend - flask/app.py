@@ -75,11 +75,14 @@ def get_sound_predicted(id):
 
 
 
-#get mismatches based on a particular region 
-@app.route('/location_mismatch',methods=['GET'])
+#get mismatches based on a particular time
+@app.route('/location_mismatch/',methods=['GET'])
 def get_location_mismatch():
     return json.dumps({})
 
+@app.route('/halloween/', methods = ['GET'])
+def get_halloween():
+    return json.dumps({})
 
 
 if __name__ == '__main__':
