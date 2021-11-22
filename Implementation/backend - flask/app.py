@@ -87,8 +87,10 @@ def get_location_mismatch(sensor_list):
     print(match_mismatch_count)
     return json.dumps(match_mismatch_count)
 
+#get halloween trends
 @app.route('/halloween/', methods = ['GET'])
 def get_halloween():
+
     return json.dumps({})
 
 
