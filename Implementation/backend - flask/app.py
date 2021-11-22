@@ -76,9 +76,16 @@ def get_sound_predicted(id):
 
 
 #get mismatches based on a particular time
-@app.route('/location_mismatch/',methods=['GET'])
-def get_location_mismatch():
-    return json.dumps({})
+@app.route('/mismatch_chart/<sensor_list>',methods=['GET'])
+def get_location_mismatch(sensor_list):
+    match_mismatch_count = {}
+    sensor_list = json.loads(sensor_list)
+    print(sensor_list)
+    for sensor in sensor_list:
+        print(sensor)
+        match_mismatch_count[sensor] = {'mismatch' : int(sensor_mismatch.loc[sensor_mismatch['sensor_id'] == int(sensor),'number'].iloc[0]), 'match': int(sensor_match.loc[sensor_mismatch['sensor_id'] == int(sensor),'number'].iloc[0])}
+    print(match_mismatch_count)
+    return json.dumps(match_mismatch_count)
 
 @app.route('/halloween/', methods = ['GET'])
 def get_halloween():
@@ -88,4 +95,3 @@ def get_halloween():
 if __name__ == '__main__':
 
     app.run(debug=True, host='127.0.0.1', port=8080)
-
