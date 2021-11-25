@@ -16,4 +16,5 @@ export class DataService {
   getSensorIdmismatch(id:any):Observable<any> {
     return this.http.get<any>(environment.filesurl+"particular_mismatch" + id);
   }
+  
 }

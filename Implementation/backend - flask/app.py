@@ -1,11 +1,12 @@
 import json
-from flask import Flask
+from flask import Flask,request
 app = Flask(__name__)
 import pandas as pd
 
 sensor_data = pd.read_csv('sensor_mismatch.csv')
 sensor_mismatch = pd.read_csv('sensor_mismatch_count.csv')
 sensor_match = pd.read_csv('sensor_match.csv')
+temporal_mismatch = pd.read_csv('temporal_mismatch.csv')
 #get all sensors data
 @app.route('/sensors',methods=['GET'])
 def get_sensors():
@@ -87,13 +88,27 @@ def get_location_mismatch(sensor_list):
     print(match_mismatch_count)
     return json.dumps(match_mismatch_count)
 
-#get halloween trends
-@app.route('/halloween/', methods = ['GET'])
-def get_halloween():
+#get mismatches based on time
+#input of the form - url/mismatch_time/[15,19]/tuesday/40
+@app.route('/mismatch_time/<time_list>/<day>/<week>', methods = ['GET'])
+def get_time_mismatch(time_list,day,week):
+    time_list = json.loads(time_list)
+    first = int(time_list[0])
+    last = int(time_list[1])
+    day = str(day.capitalize().strip())
+    print(day)
+    week = int(week)
+    df = temporal_mismatch.loc[temporal_mismatch['week'] == week]
+    df = df.loc[df['day'] == day]
+    df = df.sort_values(by=['hour'])
+    count = df[df['hour'].between(first,last)]['hour'].count()
+    return json.dumps({
+        'count' : int(count)
+    })
 
-    return json.dumps({})
 
 
 if __name__ == '__main__':
 
     app.run(debug=True, host='127.0.0.1', port=8080)
+    
