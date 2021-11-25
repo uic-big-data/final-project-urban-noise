@@ -89,7 +89,7 @@ def get_location_mismatch(sensor_list):
     return json.dumps(match_mismatch_count)
 
 #get mismatches based on time
-#input of the form - url/mismatch_time/[15,19]/tuesday/40
+#input of the form - url/mismatch_time/[15,19]/tuesday/41
 @app.route('/mismatch_time/<time_list>/<day>/<week>', methods = ['GET'])
 def get_time_mismatch(time_list,day,week):
     time_list = json.loads(time_list)
@@ -111,4 +111,4 @@ def get_time_mismatch(time_list,day,week):
 if __name__ == '__main__':
 
     app.run(debug=True, host='127.0.0.1', port=8080)
-    
+
