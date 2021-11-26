@@ -7,6 +7,8 @@ sensor_data = pd.read_csv('sensor_mismatch.csv')
 sensor_mismatch = pd.read_csv('sensor_mismatch_count.csv')
 sensor_match = pd.read_csv('sensor_match.csv')
 temporal_mismatch = pd.read_csv('temporal_mismatch.csv')
+week_aggregation = pd.read_csv('week_aggregation.csv')
+
 #get all sensors data
 @app.route('/sensors',methods=['GET'])
 def get_sensors():
@@ -76,7 +78,7 @@ def get_sound_predicted(id):
 
 
 
-#get mismatches based on a particular time
+#get number of matches and mismatches for all the sensors under the region of polygon
 @app.route('/mismatch_chart/<sensor_list>',methods=['GET'])
 def get_location_mismatch(sensor_list):
     match_mismatch_count = {}
@@ -96,19 +98,26 @@ def get_time_mismatch(time_list,day,week):
     first = int(time_list[0])
     last = int(time_list[1])
     day = str(day.capitalize().strip())
-    print(day)
+    lat_long = []
     week = int(week)
     df = temporal_mismatch.loc[temporal_mismatch['week'] == week]
     df = df.loc[df['day'] == day]
     df = df.sort_values(by=['hour'])
     count = df[df['hour'].between(first,last)]['hour'].count()
+    highest_prediction=week_aggregation.loc[week_aggregation['week'] == week,'target'].iloc[0]
+    highest_prediction = highest_prediction.split('_')[1]
+    for index,rows in df.iterrows():
+        lat_long.append((rows['latitude'],rows['longitude']))
+    lat_long = list(set(lat_long))
+
     return json.dumps({
-        'count' : int(count)
+        'count' : int(count),
+        'prediction_according_to_week' : highest_prediction,
+        'location' : lat_long 
     })
 
 
 
 if __name__ == '__main__':
-
     app.run(debug=True, host='127.0.0.1', port=8080)
 
