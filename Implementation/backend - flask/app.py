@@ -43,9 +43,13 @@ def get_particular_mismatch(id):
             'message' : 'id not present'
         })
     count = sensor_mismatch.loc[sensor_mismatch['sensor_id'] == int(id), 'number'].iloc[0]
+    count1 = sensor_match.loc[sensor_match['sensor_id']  ==  int(id), 'number'].iloc[0]
+    sound = sensor_data.loc[sensor_data['sensor_id'] == int(id), 'predictions'].iloc[0]
     return json.dumps({
         'sensor_id' : id,
-        'count' : count.tolist()
+        'mimatch_count' : count.tolist(),
+        'match_count' : count1.tolist(),
+        'sound' : sound
     })
 
 #get matches of particular sensor based on id 
@@ -92,29 +96,37 @@ def get_location_mismatch(sensor_list):
 
 #get mismatches based on time
 #input of the form - url/mismatch_time/[15,19]/tuesday/41
-@app.route('/mismatch_time/<time_list>/<day>/<week>', methods = ['GET'])
-def get_time_mismatch(time_list,day,week):
-    time_list = json.loads(time_list)
-    first = int(time_list[0])
-    last = int(time_list[1])
-    day = str(day.capitalize().strip())
-    lat_long = []
-    week = int(week)
-    df = temporal_mismatch.loc[temporal_mismatch['week'] == week]
-    df = df.loc[df['day'] == day]
-    df = df.sort_values(by=['hour'])
-    count = df[df['hour'].between(first,last)]['hour'].count()
-    highest_prediction=week_aggregation.loc[week_aggregation['week'] == week,'target'].iloc[0]
-    highest_prediction = highest_prediction.split('_')[1]
-    for index,rows in df.iterrows():
-        lat_long.append((rows['latitude'],rows['longitude']))
-    lat_long = list(set(lat_long))
-
-    return json.dumps({
-        'count' : int(count),
-        'prediction_according_to_week' : highest_prediction,
-        'location' : lat_long 
-    })
+@app.route('/mismatch_time/<time_list_first>/<time_list_second>/<day>/<week>', methods = ['GET'])
+def get_time_mismatch(time_list_first,time_list_second,day,week):
+    #time_list = json.loads(time_list)
+    try:
+        first = int(time_list_first)
+        last = int(time_list_second)
+        day = str(day.capitalize().strip())
+        lat_long = []
+        sensors = []
+        week = int(week)
+        df = temporal_mismatch.loc[temporal_mismatch['week'] == week]
+        df = df.loc[df['day'] == day]
+        df = df.sort_values(by=['hour'])
+        count = df[df['hour'].between(first,last)]['hour'].count()
+        highest_prediction=week_aggregation.loc[week_aggregation['week'] == week,'target'].iloc[0]
+        highest_prediction = highest_prediction.split('_')[1]
+        for index,rows in df.iterrows():
+            lat_long.append((rows['latitude'],rows['longitude']))
+            sensors.append(rows['sensor_id'])
+        lat_long = list(set(lat_long))
+        sensors = list(set(sensors))
+        return json.dumps({
+            'count' : int(count),
+            'prediction_according_to_week' : highest_prediction,
+            'location' : lat_long,
+            'sensors': sensors 
+        })
+    except:
+        return json.dumps({
+            'sensors': []
+        })
 
 
 

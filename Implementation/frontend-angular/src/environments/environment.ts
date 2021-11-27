@@ -4,7 +4,7 @@
 
 export const environment = {
   production: true,
-  filesurl: 'http://127.0.0.1:5000/'
+  filesurl: 'http://127.0.0.1:8080/'
 };
 
 /*
