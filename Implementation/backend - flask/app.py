@@ -85,29 +85,27 @@ def get_sound_predicted(id):
 #get number of matches and mismatches for all the sensors under the region of polygon
 @app.route('/mismatch_chart',methods=['GET','POST'])
 def get_location_mismatch():
-    try:
-        match_mismatch_count = {}
-        match=0
-        mismatch=0
-        sensor_list = request.get_json()
-        #sensor_list = json.loads(sensor_list)
-        #print(sensor_list['sensor'][0])
-        sensor_list = sensor_list['sensor']
-        for sensor in sensor_list:
+    match_mismatch_count = {}
+    match=0
+    mismatch=0
+    sensor_list = request.get_json()
+    #sensor_list = json.loads(sensor_list)
+    #print(sensor_list['sensor'][0])
+    sensor_list = sensor_list['sensor']
+    for sensor in sensor_list:
+        if sensor not in sensor_mismatch['sensor_id'].to_list():
+            match = match+ int(sensor_match.loc[sensor_match['sensor_id'] == int(sensor),'number'].iloc[0])
+        elif sensor not in sensor_match['sensor_id'].to_list():
+            mismatch = mismatch + int(sensor_mismatch.loc[sensor_mismatch['sensor_id'] == int(sensor),'number'].iloc[0])
+        else:
             mismatch = mismatch + int(sensor_mismatch.loc[sensor_mismatch['sensor_id'] == int(sensor),'number'].iloc[0])
             match = match + int(sensor_match.loc[sensor_match['sensor_id'] == int(sensor),'number'].iloc[0])
-            #match_mismatch_count[sensor] = {'mismatch' : sensor_mismatch.loc[sensor_mismatch['sensor_id'] == int(sensor),'number'].iloc[0], 'match': sensor_match.loc[sensor_mismatch['sensor_id'] == int(sensor),'number'].iloc[0]}
+        #match_mismatch_count[sensor] = {'mismatch' : sensor_mismatch.loc[sensor_mismatch['sensor_id'] == int(sensor),'number'].iloc[0], 'match': sensor_match.loc[sensor_mismatch['sensor_id'] == int(sensor),'number'].iloc[0]}
 
-        return json.dumps({
-            'mismatch' : mismatch,
-            'match' : match
-        })
-    except:
-        return json.dumps({
-            'mismatch' : 0,
-            'match' : 0
-        })
-
+    return json.dumps({
+        'mismatch' : mismatch,
+        'match' : match
+    })
 #get mismatches based on time
 #input of the form - url/mismatch_time/[15,19]/tuesday/41
 @app.route('/mismatch_time/<time_list_first>/<time_list_second>/<day>/<week>', methods = ['GET'])
