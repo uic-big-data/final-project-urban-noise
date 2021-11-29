@@ -22,7 +22,8 @@ export class DataService {
   getTemporalMismatch(time_list:any, day:any, weeknum:any):Observable<any> {
     return this.http.get<any>(environment.filesurl+"mismatch_time/" + time_list[0]+'/' +time_list[1]+'/' + day+'/' + weeknum);
   }
-  getMismatchChart(id:any):Observable<any> {
-    return this.http.get<any>(environment.filesurl+"particular_match/" + id);
+  getMismatchChart(data:any):Observable<any> {
+    console.log(data.sensor);
+    return this.http.post<any>(environment.filesurl+"mismatch_chart", data);
   }
 }

@@ -7,32 +7,33 @@ import * as d3 from 'd3';
   styleUrls: ['./details.component.css']
 })
 export class DetailsComponent implements OnInit {
-
+  sound: any = 'fsafs';
   constructor() { }
 
   ngOnInit(): void {
+    this.sound = "hello world"
   }
-  drawBars(data:any){
+  drawBars(data: any, sound: any) {
     var node = document.getElementsByTagName('figure')[0]; //Removing the previous node on the screen
     while (node.firstChild) {
       node.removeChild(node.firstChild);
     }
-    console.log(data);
+    console.log(this.sound);
     let svg: any;
-     let margin = 50;
-     let width = 400 - margin * 2;
+    let margin = 50;
+    let width = 400 - margin * 2;
     let height = 300 - margin * 2;
     svg = d3
-    .select('figure#bar')
-    .append('svg')
-    .attr('width', width + margin * 2)
-    .attr('height', height + margin * 2)
-    .append('g')
-    .attr('transform', 'translate(' +margin + ',' + margin + ')');
+      .select('figure')
+      .append('svg')
+      .attr('width', width + margin * 2)
+      .attr('height', height + margin * 2)
+      .append('g')
+      .attr('transform', 'translate(' + margin + ',' + margin + ')');
     const x = d3
       .scaleBand()
       .range([0, width])
-      .domain(data.map((d:any) => d.type))
+      .domain(data.map((d: any) => d.type))
       .padding(0.1);
     svg
       .append('g')
@@ -41,7 +42,7 @@ export class DetailsComponent implements OnInit {
       .selectAll('text')
       .attr('transform', 'translate(13,0)')
       .style('text-anchor', 'end');
-    const y = d3.scaleLinear().domain([0, 30]).range([height, 0]);
+    const y = d3.scaleLinear().domain([0, 300]).range([height, 0]);
     svg.append('g').call(d3.axisLeft(y)).append('text');
     svg
       .selectAll('bars')
@@ -61,5 +62,15 @@ export class DetailsComponent implements OnInit {
       .attr('text-anchor', 'right')
       .attr('x', (d: any) => x(d.type))
       .attr('y', (d: any) => y(d.count))
-}
+      .text(function (d: any) {
+        let percent;
+        return (
+          d.count
+        );
+      });
+    this.sound = sound;
+    if (document.getElementById("sound")) {
+      document.getElementById("sound")!.innerHTML = sound || "";
+    }
+  }
 }

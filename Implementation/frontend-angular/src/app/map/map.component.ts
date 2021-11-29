@@ -48,6 +48,7 @@ export class MapComponent implements AfterViewInit {
   weekList: any = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   weeknum: any = [];
   resulttext: any;
+  soundName: any;
   form = new FormGroup({
     weekDay: new FormControl(),
     weekNumber: new FormControl()
@@ -63,7 +64,7 @@ export class MapComponent implements AfterViewInit {
         this.data = data;
         this.plotSensorPoints();
       });
-    for (let i = 1; i <= 53; i++) {
+    for (let i = 15; i <= 53; i++) {
       this.weeknum.push(i);
     }
   }
@@ -139,6 +140,7 @@ export class MapComponent implements AfterViewInit {
       this.map.addInteraction(translate);
       selectedFeatures.clear();
       delaySelectActivate();
+      var selectedFeaturesIds = [];
       var polygon = e.feature.getGeometry();
       var features = vectorLayer.getSource().getFeatures();
       for (var i = 0; i < features.length; i++) {
@@ -149,13 +151,14 @@ export class MapComponent implements AfterViewInit {
           polygon.intersectsExtent(activeFeature)
         ) {
           selectedFeatures.push(features[i]);
-        }
+          selectedFeaturesIds.push(features[i].getId());}
       }
-      this.getMismatchForGeometry();
+      this.getMismatchForGeometry(selectedFeaturesIds);
     });
     
     translate.on('translateend', (event)=> {
       selectedFeatures.clear();
+      var selectedFeaturesIds = [];
       let polygon: any = drawingLayer
         .getSource()
         .getFeatures()[0]
@@ -164,9 +167,9 @@ export class MapComponent implements AfterViewInit {
       for (var i = 0; i < features.length; i++) {
         if (polygon.intersectsExtent(features[i].getGeometry().getExtent())) {
           selectedFeatures.push(features[i]);
-        }
+            selectedFeaturesIds.push(features[i].getId());} 
       }
-      this.getMismatchForGeometry();
+      this.getMismatchForGeometry(selectedFeaturesIds);
     });
     function delaySelectActivate() {
       setTimeout(()=> {
@@ -174,19 +177,21 @@ export class MapComponent implements AfterViewInit {
       }, 300);
     }
   }
-  getMismatchForGeometry(){
-
+  getMismatchForGeometry(features: any){
+    this.dataService.getMismatchChart({"sensor": features}).subscribe((data:any)=>{
+      this.plotBarPlotForID(data.match, data.mismatch, 0, "");
+    })
   }
 
   getMatchAndMismatch(id: any) {
     this.dataService
       .getSensorIdmismatch(id)
       .subscribe((data: any) => {
-        this.plotBarPlotForID(data.match_count, data.mimatch_count, id);
+        this.plotBarPlotForID(data.match_count, data.mimatch_count, id, data.sound);
       });
 
   }
-  plotBarPlotForID(match: any, mismatch: any, sensor_id: any) {
+  plotBarPlotForID(match: any, mismatch: any, sensor_id: any, sound:any) {
     let d = [
       {
         sensor_id: sensor_id,
@@ -198,7 +203,7 @@ export class MapComponent implements AfterViewInit {
         count: mismatch
       }
     ]
-    this.detailsObject.drawBars(d);
+    this.detailsObject.drawBars(d, sound);
   }
   submit() {
     this.resulttext = '';
@@ -207,10 +212,10 @@ export class MapComponent implements AfterViewInit {
       .getTemporalMismatch([this.time.hour, this.time1.hour], this.form.value.weekDay, this.form.value.weekNumber)
       .subscribe((data: any) => {
         console.log(data);
-        this.highlightFeatures(data.sensors);
+        this.highlightFeatures(data.sensors, data.prediction_according_to_week);
       });
   }
-  highlightFeatures(sensors: any) {
+  highlightFeatures(sensors: any, sound: any) {
     this.resulttext = "The sensors where the mismatches are:"
     //console.log(this.features);
     let features = this.features;
@@ -229,5 +234,6 @@ export class MapComponent implements AfterViewInit {
         }
       }
     }
+    this.soundName = sound;
   }
 }

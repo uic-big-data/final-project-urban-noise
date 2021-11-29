@@ -41,7 +41,7 @@ export class TimeSeriesComponent implements OnInit {
     }
   }
   highlight(data:any){
-    this.mapObject.highlightFeatures(data);
+    //this.mapObject.highlightFeatures(data);
   }
 
 }
