@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.25)  3 DEC 2021 16:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.25)  10 DEC 2021 02:40
 entering extended mode
 **./proposal.tex
 (proposal.tex
@@ -490,60 +490,80 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
 (C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-(01-introduction.tex) (02-related.tex) (03-data.tex [1{C:/Users/Ashwin/AppData/
-Local/MiKTeX/pdftex/config/pdftex.map}
+(01-introduction.tex) (02-related.tex) (03-data.tex
+<./figs//figure5.png, id=40, 165.61874pt x 392.21532pt>
+File: ./figs//figure5.png Graphic file (type png)
+<use ./figs//figure5.png>
+Package pdftex.def Info: ./figs//figure5.png  used on input line 5.
+(pdftex.def)             Requested size: 170.71652pt x 404.30946pt.
+ [1{C:/Users/Ashwin/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
 
  <./diamondrule.pdf>]
-<./figs//figure1.png, id=59, 725.71124pt x 581.17125pt>
+<./figs//figure1.png, id=61, 725.71124pt x 581.17125pt>
 File: ./figs//figure1.png Graphic file (type png)
 <use ./figs//figure1.png>
-Package pdftex.def Info: ./figs//figure1.png  used on input line 10.
+Package pdftex.def Info: ./figs//figure1.png  used on input line 17.
 (pdftex.def)             Requested size: 256.0748pt x 205.07129pt.
 
-Overfull \hbox (4.75581pt too wide) in paragraph at lines 10--11
+Overfull \hbox (4.75581pt too wide) in paragraph at lines 17--18
 [][] 
  []
 
 ) (04-research.tex
-<./figs//figure2.png, id=60, 673.51625pt x 382.42876pt>
+<./figs//figure2.png, id=62, 673.51625pt x 382.42876pt>
 File: ./figs//figure2.png Graphic file (type png)
 <use ./figs//figure2.png>
-Package pdftex.def Info: ./figs//figure2.png  used on input line 10.
+Package pdftex.def Info: ./figs//figure2.png  used on input line 5.
 (pdftex.def)             Requested size: 256.0748pt x 145.40028pt.
 
-Overfull \hbox (4.75581pt too wide) in paragraph at lines 10--11
+Overfull \hbox (4.75581pt too wide) in paragraph at lines 5--6
 [][] 
  []
 
-) (05-results.tex) (06-conclusion.tex) (proposal.bbl) [2 <./figs//figure1.png> 
-<./figs//figure2.png>] (proposal.aux)
+[2 <./figs//figure5.png> <./figs//figure1.png> <./figs//figure2.png>]
+<./figs//figure3.png, id=74, 321.45094pt x 205.5178pt>
+File: ./figs//figure3.png Graphic file (type png)
+<use ./figs//figure3.png>
+Package pdftex.def Info: ./figs//figure3.png  used on input line 28.
+(pdftex.def)             Requested size: 256.0748pt x 163.72455pt.
 
-Package rerunfilecheck Warning: File `proposal.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+Overfull \hbox (4.75581pt too wide) in paragraph at lines 28--29
+[][] 
+ []
 
-Package rerunfilecheck Info: Checksums for `proposal.out':
-(rerunfilecheck)             Before: B9561944A89DCE2C0035FBFCFB68E4F4;578
-(rerunfilecheck)             After:  014B257046C9CBD2049D821DFC6D0EB9;583.
+<./figs//figure6.png, id=75, 563.10374pt x 423.5825pt>
+File: ./figs//figure6.png Graphic file (type png)
+<use ./figs//figure6.png>
+Package pdftex.def Info: ./figs//figure6.png  used on input line 38.
+(pdftex.def)             Requested size: 256.0748pt x 192.62692pt.
+
+Overfull \hbox (4.75581pt too wide) in paragraph at lines 38--39
+[][] 
+ []
+
+) (05-results.tex) (06-conclusion.tex) (proposal.bbl) [3 <./figs//figure3.png> 
+<./figs//figure6.png>] (proposal.aux)
+Package rerunfilecheck Info: File `proposal.out' has not changed.
+(rerunfilecheck)             Checksum: E796968BDEBB7DE45869652DAC88276F;585.
  ) 
 Here is how much of TeX's memory you used:
- 10793 strings out of 478864
- 166089 string characters out of 2848186
- 530544 words of memory out of 3000000
- 28289 multiletter control sequences out of 15000+600000
- 441405 words of font info for 217 fonts, out of 8000000 for 9000
+ 10839 strings out of 478864
+ 166954 string characters out of 2848186
+ 530897 words of memory out of 3000000
+ 28322 multiletter control sequences out of 15000+600000
+ 441756 words of font info for 223 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 61i,8n,66p,1478b,336s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 61i,8n,66p,1478b,363s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/Ashwin/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C
 :/Users/Ashwin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pf
 b><C:/Users/Ashwin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8
 a.pfb><C:/Users/Ashwin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr
 8a.pfb><C:/Users/Ashwin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utm
 ri8a.pfb>
-Output written on proposal.pdf (2 pages, 109594 bytes).
+Output written on proposal.pdf (3 pages, 279650 bytes).
 PDF statistics:
- 96 PDF objects out of 1000 (max. 8388607)
- 20 named destinations out of 1000 (max. 500000)
- 66112 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 110 PDF objects out of 1000 (max. 8388607)
+ 24 named destinations out of 1000 (max. 500000)
+ 66127 words of extra memory for PDF output out of 74296 (max. 10000000)
 
