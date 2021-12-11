@@ -57,6 +57,10 @@ Too many commas in name 1 of "Mark Cartwright, Ana Elisa Mendez Mendez1, Jason C
 while executing---line 1236 of file abbrv-doi.bst
 Too many commas in name 1 of "Mark Cartwright, Ana Elisa Mendez Mendez1, Jason Cramer1, Vincent Lostanlen Graham Dove, Ho-Hsiang Wu1, Justin Salamon, Oded Nov, and Juan Pablo Bello" for entry 4
 while executing---line 1236 of file abbrv-doi.bst
+Name 1 in "Lauro Lins, James T. Klosowski, and Carlos Scheidegger" has a comma at the end for entry 9
+while executing---line 1236 of file abbrv-doi.bst
+Name 1 in "Lauro Lins, James T. Klosowski, and Carlos Scheidegger" has a comma at the end for entry 9
+while executing---line 1278 of file abbrv-doi.bst
 Name 1 in "M. S. Hammer, T. K. Swinburn, and R. L. Neitzel" has a comma at the end for entry 1
 while executing---line 1278 of file abbrv-doi.bst
 Name 1 in "Mark Cartwright, Ana Elisa Mendez Mendez1, Jason Cramer1, Vincent Lostanlen Graham Dove, Ho-Hsiang Wu1, Justin Salamon, Oded Nov, and Juan Pablo Bello" has a comma at the end for entry 4
@@ -83,45 +87,45 @@ Too many commas in name 1 of "Mark Cartwright, Ayanna Seals, Justin Salamon, Ale
 while executing---line 1278 of file abbrv-doi.bst
 Too many commas in name 1 of "Toni Heittola, Annamaria Mesaros, Antti Eronen, Tuomas Virtanen" for entry 8
 while executing---line 1278 of file abbrv-doi.bst
-You've used 8 entries,
+You've used 9 entries,
             2598 wiz_defined-function locations,
-            623 strings with 5726 characters,
-and the built_in function-call counts, 1685 in all, are:
-= -- 143
-> -- 68
+            626 strings with 5843 characters,
+and the built_in function-call counts, 1922 in all, are:
+= -- 163
+> -- 81
 < -- 0
-+ -- 28
-- -- 20
-* -- 62
-:= -- 268
-add.period$ -- 17
-call.type$ -- 8
-change.case$ -- 34
++ -- 33
+- -- 24
+* -- 74
+:= -- 306
+add.period$ -- 19
+call.type$ -- 9
+change.case$ -- 39
 chr.to.int$ -- 0
-cite$ -- 9
-duplicate$ -- 56
-empty$ -- 186
-format.name$ -- 20
-if$ -- 371
+cite$ -- 10
+duplicate$ -- 63
+empty$ -- 209
+format.name$ -- 24
+if$ -- 422
 int.to.chr$ -- 0
-int.to.str$ -- 8
+int.to.str$ -- 9
 missing$ -- 0
-newline$ -- 36
-num.names$ -- 14
-pop$ -- 69
+newline$ -- 40
+num.names$ -- 16
+pop$ -- 79
 preamble$ -- 1
-purify$ -- 26
+purify$ -- 30
 quote$ -- 0
-skip$ -- 73
+skip$ -- 82
 stack$ -- 0
-substring$ -- 40
-swap$ -- 8
+substring$ -- 45
+swap$ -- 9
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 32
+type$ -- 36
 warning$ -- 1
-while$ -- 14
-width$ -- 9
-write$ -- 64
-(There were 31 error messages)
+while$ -- 16
+width$ -- 10
+write$ -- 72
+(There were 33 error messages)

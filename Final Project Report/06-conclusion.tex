@@ -1,4 +1,9 @@
 
 	\section{Conclusion}
+	The main aim of this project is to understand and build a system to predict and visually analyze noise pollution in the city of New York.
+	The dataset ~\cite{7} is a multi-label classification dataset recorded by urban sensors across the city of New York.
+	According to the analysis performed we can infer that the mismatches are more for fine level prediction as compared to coarse level prediction due to greater hierarchy of output classes in fine level taxonomy .By observing the model performance we could make out that it is biased towards certain sound groups in the city like small-sounding-engine and car-horn. This might be due to the fact that these are easily captured and can be mistaken for other sound groups like stationary-music and siren. According to our analysis the senors present in the Greenwich village right in the center of NYC have the most number of mismatches.  The overlap of sounds in this part of the city during peak hours could be one of the reasons our model could not capture the relevant audio features.
+	
+	There could be some tweaks that can be performed on this model to include data from various other regions and capture different sound groups in the city to reduce bias. This system can be expanded to capture noise data in other metropolis like Chicago, Los Angeles and San Francisco. This could also be further extended to include data from a range of years rather than concentrating on the data of 2019. Different type of neural networks and ML models can be used to achieve a higher F1 score. Nanocubes can be implemented to create interactive visualizations of large data points ~\cite{9}.
 	
 
