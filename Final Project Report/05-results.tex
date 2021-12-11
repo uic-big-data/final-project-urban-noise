@@ -1,5 +1,4 @@
 	\section{results}
-
 	When we plotted the sensors on map visually, we could see that most of the sensors are located in and around lower Manhattan city and others are positioned at upper Manhattan, Brooklyn City ((Fig. 12.). The sensors are located around Washington Square Park where most of the sounds are produced in an around the park. 
 
 	\begin{figure}[h!]
@@ -41,3 +40,13 @@
 		\includegraphics[width=7cm]{figure11}
 		\caption{Holiday trends through mismatches}
 	\end{figure}
+	
+	Using the results obtained from our exploratory analysis, we developed a visual system which visualizes all the sensors points spatially and on a map. There are two components in the system. Namely, frontend and backend. The functionality of frontend is to contain all the temporal and spatial components required to understand mismatches of sounds for a given time and location for a particular sensor.  The backend would serve all the API's required by frontend in visualize points of mismatches.
+	
+	\begin{figure}[h!]
+	\centering
+	\includegraphics[width=9cm]{figure13}
+	\caption{Visual system visualizing number of mismatches}
+	\end{figure}
+	
+	The (Fig 13.). shows a snippet of the developed visual system. For developing this system we have used Angular on the frontend and flask on the backend. The main advantage in using Angular is it provides us with component based architecture, this allows the developer segregate his functionality into components. Likewise we have segregated our functionality into 3 components, namely time component which allows the user to select the time frame of mismatches, map component which plots all the points of sensors and allows user interactions likes point click and polygon drawing and chart component which gives us with bar chart of matches and mismatches, predicted sound for a particular sensor or region. The main advantages of using flask is routing URL can be easily generated. For our system we have five API endpoints namely /sensors - fetches all the sensors spatial data, /particular:id- gets all the counts of mismatches and matches of a given sensor id, /soundpredicted - gets the most predicted sound for a particular region, /mismatcheschart - gets the number of matches and mismatches and get the most frequent sound, /mismatchestime - get mismatch data based on given time.

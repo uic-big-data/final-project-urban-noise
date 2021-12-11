@@ -1,19 +1,19 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.25)  11 DEC 2021 02:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.29)  11 DEC 2021 11:11
 entering extended mode
 **./proposal.tex
 (proposal.tex
 LaTeX2e <2021-06-01>
 L3 programming layer <2021-06-01> (vgtc.cls
 Document Class: vgtc 2006/05/21 IEEE VGTC
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifpdf.sty
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifpdf.sty
 Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
 
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2021/02/12 v1.4n Standard LaTeX document class
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
 File: size10.clo 2021/02/12 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count182
@@ -36,34 +36,32 @@ File: size10.clo 2021/02/12 v1.4n Standard LaTeX file (size option)
 \abstxtspace=\skip52
 \vgtc@copyrightlength=\skip53
 )
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2020/12/05 v1.2c Enhanced LaTeX Graphics (DPC,SPQR)
-
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
-
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.
-cfg
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics
+.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
 
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.de
-f
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.d
+ef
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen141
 \Gin@req@width=\dimen142
 )
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.st
-y
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.s
+ty
 Package: microtype 2021/03/14 v2.8c Micro-typographical refinements (RS)
 \MT@toks=\toks17
 \MT@count=\count190
@@ -72,8 +70,8 @@ LaTeX Info: Redefining \textls on input line 790.
 LaTeX Info: Redefining \textmicrotypecontext on input line 1374.
 \MT@listname@count=\count191
 
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype-pd
-ftex.def
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype-p
+dftex.def
 File: microtype-pdftex.def 2021/03/14 v2.8c Definitions specific to pdftex (RS)
 
 LaTeX Info: Redefining \lsstyle on input line 915.
@@ -82,12 +80,14 @@ LaTeX Info: Redefining \lslig on input line 915.
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.cf
-g
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.c
+fg
 File: microtype.cfg 2021/03/14 v2.8c microtype main configuration file (RS)
-)) (C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
+))
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
-) (C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\mathptmx.sty
+)
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\mathptmx.sty
 Package: mathptmx 2020/03/25 PSNFSS-v9.3 Times w/ Math, improved (SPQR, WaS) 
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -123,15 +123,15 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
 LaTeX Info: Redefining \hbar on input line 50.
 )
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\times.sty
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\times.sty
 Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
 )
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/cite\cite.sty
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/cite\cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
 )
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen144
 \lightrulewidth=\dimen145
@@ -150,7 +150,7 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisruleclass=\count194
 \@lastruleclass=\count195
 \@thisrulewidth=\dimen156
-) (C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+) (C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count196
 \float@exts=\toks18
@@ -158,73 +158,75 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks19
 \@floatcapt=\box51
 )
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2021-06-05 v7.00l Hypertext links for LaTeX
 
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmd
-s.sty
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcm
+ds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.
-sty
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr
+.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.
-sty
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvsetkeys
+.sty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 )
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefin
-ekeys.sty
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefi
+nekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 )
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.
-sty
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape
+.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 )
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacr
-o.sty
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmac
+ro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 )
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.st
-y
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.s
+ty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
 \@linkdim=\dimen157
 \Hy@linkcounter=\count197
 \Hy@pagecounter=\count198
- (C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2021-06-05 v7.00l Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref-lang
-patches.def
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref-lan
+gpatches.def
 File: hyperref-langpatches.def 2021-06-05 v7.00l Hyperref: patches for babel la
 nguages
 )
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.st
-y
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.s
+ty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
 \Hy@SavedSpaceFactor=\count199
- (C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2021-06-05 v7.00l Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
@@ -237,18 +239,19 @@ Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4445.
 \c@Hy@tempcnt=\count266
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4804.
 \XeTeXLinkMargin=\dimen158
 
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcal
-c.sty
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintca
+lc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
@@ -265,7 +268,7 @@ Package hyperref Info: PDF/A mode OFF on input line 6106.
 LaTeX Info: Redefining \ref on input line 6146.
 LaTeX Info: Redefining \pageref on input line 6150.
 
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
@@ -274,10 +277,12 @@ package with kernel methods
 \c@Hfootnote=\count270
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
- (C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
 File: hpdftex.def 2021-06-05 v7.00l Hyperref driver for pdfTeX
 
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.st
+y
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
 e
 with kernel methods
@@ -285,12 +290,12 @@ with kernel methods
 \Fld@listcount=\count271
 \c@bookmark@seq@number=\count272
 
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfi
-lecheck.sty
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunf
+ilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
 
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\unique
-counter.sty
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniqu
+ecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
@@ -298,10 +303,11 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip55
 )
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cf
+g
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -339,11 +345,11 @@ Package hyperref Info: Option `nesting' set `true' on input line 153.
 Package hyperref Info: Option `linktocpage' set `true' on input line 153.
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 1
 59.
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pd
-ftex.def
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-p
+dftex.def
 File: l3backend-pdftex.def 2021-05-07 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count273
 \l__pdf_internal_box=\box52
@@ -369,8 +375,8 @@ LaTeX Font Info:    ... okay on input line 159.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 159.
 LaTeX Font Info:    ... okay on input line 159.
 
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
-kii
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.
+mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count274
 \scratchdimen=\dimen161
@@ -384,14 +390,14 @@ kii
 \makeMPintoPDFobject=\count279
 \everyMPtoPDFconversion=\toks21
 )
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-
-base.sty
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf
+-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.
-cfg
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys
+.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 LaTeX Info: Redefining \microtypecontext on input line 159.
@@ -406,20 +412,19 @@ Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
 
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-ptm.cfg
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-ptm.cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
 \big@size=\dimen163
 Package hyperref Info: Link coloring OFF on input line 159.
-
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\getti
-tlestring.sty
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gett
+itlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count280
@@ -434,7 +439,7 @@ LaTeX Info: Redefining \nameref on input line 159.
 LaTeX Font Info:    Trying to load font information for OT1+phv on input line 1
 68.
 
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1phv.fd
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
 Package microtype Info: Loading generic protrusion settings for font family
@@ -444,7 +449,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
  168.
 
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 Package microtype Info: Loading generic protrusion settings for font family
@@ -454,19 +459,19 @@ Package microtype Info: Loading generic protrusion settings for font family
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
  168.
 
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlztmcm.fd
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
  168.
 
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsztmcm.fd
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
  168.
 
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxztmcm.fd
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
@@ -475,7 +480,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 168.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 168.
-<diamondrule.pdf, id=27, 213.79875pt x 12.045pt>
+<diamondrule.pdf, id=31, 213.79875pt x 12.045pt>
 File: diamondrule.pdf Graphic file (type pdf)
 <use diamondrule.pdf>
 Package pdftex.def Info: diamondrule.pdf  used on input line 168.
@@ -487,20 +492,20 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
 68.
 
-(C:\Users\Ashwin\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
+(C:\Users\svelet2\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 (01-introduction.tex) (02-related.tex) (03-data.tex
-<./figs//figure5.png, id=40, 165.61874pt x 392.21532pt>
+<./figs//figure5.png, id=44, 165.61874pt x 392.21532pt>
 File: ./figs//figure5.png Graphic file (type png)
 <use ./figs//figure5.png>
 Package pdftex.def Info: ./figs//figure5.png  used on input line 5.
 (pdftex.def)             Requested size: 170.71652pt x 404.30946pt.
- [1{C:/Users/Ashwin/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
+ [1{C:/Users/svelet2/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
 
  <./diamondrule.pdf>]
-<./figs//figure1.png, id=61, 725.71124pt x 581.17125pt>
+<./figs//figure1.png, id=65, 725.71124pt x 581.17125pt>
 File: ./figs//figure1.png Graphic file (type png)
 <use ./figs//figure1.png>
 Package pdftex.def Info: ./figs//figure1.png  used on input line 17.
@@ -511,7 +516,7 @@ Overfull \hbox (4.75581pt too wide) in paragraph at lines 17--18
  []
 
 ) (04-research.tex
-<./figs//figure2.png, id=62, 673.51625pt x 382.42876pt>
+<./figs//figure2.png, id=66, 673.51625pt x 382.42876pt>
 File: ./figs//figure2.png Graphic file (type png)
 <use ./figs//figure2.png>
 Package pdftex.def Info: ./figs//figure2.png  used on input line 5.
@@ -522,7 +527,7 @@ Overfull \hbox (4.75581pt too wide) in paragraph at lines 5--6
  []
 
 [2 <./figs//figure5.png> <./figs//figure1.png> <./figs//figure2.png>]
-<./figs//figure3.png, id=74, 321.45094pt x 205.5178pt>
+<./figs//figure3.png, id=78, 321.45094pt x 205.5178pt>
 File: ./figs//figure3.png Graphic file (type png)
 <use ./figs//figure3.png>
 Package pdftex.def Info: ./figs//figure3.png  used on input line 25.
@@ -532,82 +537,93 @@ Overfull \hbox (4.75581pt too wide) in paragraph at lines 25--26
 [][] 
  []
 
-<./figs//figure6.png, id=75, 563.10374pt x 423.5825pt>
-File: ./figs//figure6.png Graphic file (type png)
-<use ./figs//figure6.png>
-Package pdftex.def Info: ./figs//figure6.png  used on input line 35.
-(pdftex.def)             Requested size: 256.0748pt x 192.62692pt.
-
-Overfull \hbox (4.75581pt too wide) in paragraph at lines 35--36
-[][] 
- []
-
 ) (05-results.tex
-<./figs//figure12.png, id=76, 429.70537pt x 451.08525pt>
+<./figs//figure12.png, id=79, 429.70537pt x 451.08525pt>
 File: ./figs//figure12.png Graphic file (type png)
 <use ./figs//figure12.png>
-Package pdftex.def Info: ./figs//figure12.png  used on input line 7.
+Package pdftex.def Info: ./figs//figure12.png  used on input line 6.
 (pdftex.def)             Requested size: 170.71652pt x 179.20572pt.
-<./figs//figure7.png, id=77, 428.802pt x 318.59026pt>
+<./figs//figure7.png, id=80, 428.802pt x 318.59026pt>
 File: ./figs//figure7.png Graphic file (type png)
 <use ./figs//figure7.png>
-Package pdftex.def Info: ./figs//figure7.png  used on input line 14.
+Package pdftex.def Info: ./figs//figure7.png  used on input line 13.
 (pdftex.def)             Requested size: 256.0748pt x 190.266pt.
 
-Overfull \hbox (4.75581pt too wide) in paragraph at lines 14--15
+Overfull \hbox (4.75581pt too wide) in paragraph at lines 13--14
 [][] 
  []
 
+<./figs//figure8.png, id=81, 361.04887pt x 253.84837pt>
+File: ./figs//figure8.png Graphic file (type png)
+<use ./figs//figure8.png>
+Package pdftex.def Info: ./figs//figure8.png  used on input line 23.
+(pdftex.def)             Requested size: 113.81102pt x 80.01688pt.
+<./figs//figure9.png, id=82, 290.88675pt x 211.992pt>
+File: ./figs//figure9.png Graphic file (type png)
+<use ./figs//figure9.png>
+Package pdftex.def Info: ./figs//figure9.png  used on input line 24.
+(pdftex.def)             Requested size: 113.81102pt x 82.94179pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[3 <./figs//figure3.png> <./figs//figure6.png> <./figs//figure12.png>]
-<./figs//figure8.png, id=88, 361.04887pt x 253.84837pt>
-File: ./figs//figure8.png Graphic file (type png)
-<use ./figs//figure8.png>
-Package pdftex.def Info: ./figs//figure8.png  used on input line 24.
-(pdftex.def)             Requested size: 113.81102pt x 80.01688pt.
-<./figs//figure9.png, id=89, 290.88675pt x 211.992pt>
-File: ./figs//figure9.png Graphic file (type png)
-<use ./figs//figure9.png>
-Package pdftex.def Info: ./figs//figure9.png  used on input line 25.
-(pdftex.def)             Requested size: 113.81102pt x 82.94179pt.
-<./figs//figure10.png, id=90, 293.29575pt x 215.30438pt>
+[3 <./figs//figure3.png> <./figs//figure12.png> <./figs//figure7.png>]
+<./figs//figure10.png, id=93, 293.29575pt x 215.30438pt>
 File: ./figs//figure10.png Graphic file (type png)
 <use ./figs//figure10.png>
-Package pdftex.def Info: ./figs//figure10.png  used on input line 33.
+Package pdftex.def Info: ./figs//figure10.png  used on input line 32.
 (pdftex.def)             Requested size: 199.16928pt x 146.2112pt.
-<./figs//figure11.png, id=91, 289.38112pt x 206.57175pt>
+<./figs//figure11.png, id=94, 289.38112pt x 206.57175pt>
 File: ./figs//figure11.png Graphic file (type png)
 <use ./figs//figure11.png>
-Package pdftex.def Info: ./figs//figure11.png  used on input line 41.
+Package pdftex.def Info: ./figs//figure11.png  used on input line 40.
 (pdftex.def)             Requested size: 199.16928pt x 142.17531pt.
-)
-(06-conclusion.tex) (proposal.bbl [4 <./figs//figure7.png> <./figs//figure8.png
-> <./figs//figure9.png> <./figs//figure10.png> <./figs//figure11.png>])
+<./figs//figure13.png, id=95, 1142.46825pt x 558.888pt>
+File: ./figs//figure13.png Graphic file (type png)
+<use ./figs//figure13.png>
+Package pdftex.def Info: ./figs//figure13.png  used on input line 48.
+(pdftex.def)             Requested size: 256.0748pt x 125.2668pt.
+
+Overfull \hbox (4.75581pt too wide) in paragraph at lines 48--49
+ [][] 
+ []
+
+) (06-conclusion.tex) (proposal.bbl [4 <./figs//figure8.png> <./figs//figure9.p
+ng> <./figs//figure10.png> <./figs//figure11.png> <./figs//figure13.png>])
 [5
 
 ] (proposal.aux)
-Package rerunfilecheck Info: File `proposal.out' has not changed.
-(rerunfilecheck)             Checksum: 0ACE2122DFFCE65184EDC85FB11BF502;585.
+
+Package rerunfilecheck Warning: File `proposal.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `proposal.out':
+(rerunfilecheck)             Before: 6EF6B195F8693470E6BA214FA3178362;717
+(rerunfilecheck)             After:  248E5AD7A0D09F96F123648A3C480107;584.
  ) 
 Here is how much of TeX's memory you used:
- 10920 strings out of 478864
- 168311 string characters out of 2848186
- 530920 words of memory out of 3000000
- 28389 multiletter control sequences out of 15000+600000
- 441994 words of font info for 227 fonts, out of 8000000 for 9000
+ 10923 strings out of 478864
+ 168888 string characters out of 2847712
+ 530943 words of memory out of 3000000
+ 28390 multiletter control sequences out of 15000+600000
+ 442000 words of font info for 227 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  61i,8n,66p,1478b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
-{C:/Users/Ashwin/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C
-:/Users/Ashwin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pf
-b><C:/Users/Ashwin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8
-a.pfb><C:/Users/Ashwin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr
-8a.pfb><C:/Users/Ashwin/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utm
-ri8a.pfb>
-Output written on proposal.pdf (5 pages, 2549040 bytes).
+pdfTeX warning (dest): name{section.17} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.10} has been referenced but does not exi
+st, replaced by a fixed one
+
+{C:/Users/svelet2/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:
+/Users/svelet2/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pf
+b><C:/Users/svelet2/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr
+8a.pfb><C:/Users/svelet2/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/ut
+mr8a.pfb><C:/Users/svelet2/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/
+utmri8a.pfb>
+Output written on proposal.pdf (5 pages, 3657460 bytes).
 PDF statistics:
- 140 PDF objects out of 1000 (max. 8388607)
- 32 named destinations out of 1000 (max. 500000)
- 66157 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 145 PDF objects out of 1000 (max. 8388607)
+ 34 named destinations out of 1000 (max. 500000)
+ 66165 words of extra memory for PDF output out of 74296 (max. 10000000)
 
