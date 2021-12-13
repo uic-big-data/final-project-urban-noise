@@ -7,7 +7,7 @@
     \end{figure}
     
    
-   	We have divided the process of building this tool into four stages(see Figure 2) namely data preprocessing state where we process the audio files, Modeling stage where we apply the classification models on the dataset and create REST API's to interact with the front-end, Visualization stage where we visualize the results of machine learning model on the front-end, component building stage where we build components which allows the user to pick spatial and temporal values of various sound samples and display the results on a map.
+   	We have divided the process of building this tool into four stages(see Fig 3) namely data preprocessing state where we process the audio files, Modeling stage where we apply the classification models on the dataset and create REST API's to interact with the front-end, Visualization stage where we visualize the results of machine learning model on the front-end, component building stage where we build components which allows the user to pick spatial and temporal values of various sound samples and display the results on a map.
    	
     This tool would be useful to authorities who monitor sounds around the city which will allow them to pinpoint the location of sound origin.
     
@@ -27,7 +27,7 @@
     \end{figure}
    
     
-    As we can see from fig 3 the model has misclassified certain fine level tags leading to a lower AUPRC of 0.73 on fine level predictions as compared to 0.83 on course levcel predictions.The f1 score recorded for the fine level predictions is 0.61 and 0.73 for course level predictions. As we can observe here the model clearly performed poorly on fine level predictions. This is due to the dense heirarchy of class labels and the model failed to capture all the variance in the data.
+    As we can see from (Fig.4) the model has misclassified certain fine level tags leading to a lower AUPRC of 0.73 on fine level predictions as compared to 0.83 on course levcel predictions.The F1 score recorded for the fine level predictions is 0.61 and 0.73 for course level predictions. As we can observe here the model clearly performed poorly on fine level predictions. This is due to the dense heirarchy of class labels and the model failed to capture all the variance in the data.
     
     We wanted to understand the mismatches caused by the model in these fine-level classes. We performed certain analysis on the predictions by this model on test and validation data. We started with combining the predictions and ground truth for each audio file by using pandas. This made it easy to perform various tests and analysis on our data.
     
